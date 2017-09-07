@@ -1,5 +1,5 @@
 export default (Sequelize, DataTypes) => {
-    Sequelize.define('Facultad', {
+    const Facultad = Sequelize.define('Facultad', {
         codigofacultad: {
             type: DataTypes.STRING,
             primaryKey: true,
@@ -11,4 +11,7 @@ export default (Sequelize, DataTypes) => {
             allowNull: false
         }
     });
+
+    return Facultad;
+
 };

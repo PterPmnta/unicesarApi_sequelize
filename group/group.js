@@ -12,10 +12,10 @@ export default (Sequelize, DataTypes) => {
       }
     });
   
-    Group.associate = ({ Subject, Person, Union }) => {
+    Group.associate = ({ Subject, Person, Intercepto }) => {
       Group.belongsTo(Subject);
-      console.log(Union);
-      Group.belongsToMany(Person, { through: Union });
+      console.log(Intercepto);
+      Group.belongsToMany(Person, { through: Intercepto });
     };
   
     return Group;

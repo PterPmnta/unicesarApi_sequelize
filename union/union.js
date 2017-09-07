@@ -1,5 +1,5 @@
 export default (sequelize, DataTypes) => {
-    const Union = sequelize.define('Union', {
+    const Intercepto = sequelize.define('Intercepto', {
       unioncode: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -7,5 +7,5 @@ export default (sequelize, DataTypes) => {
       };
     });
 
-    return Union;
+    return Intercepto;
 };

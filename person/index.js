@@ -16,9 +16,9 @@ export default (sequelize, DataTypes) => {
       }
     });
   
-    Person.associate = ({ Group, Union }) => {
+    Person.associate = ({ Group, Intercepto }) => {
       console.log(Union);
-      Person.belongsToMany(Group, { through: Union });
+      Person.belongsToMany(Group, { through: Intercepto });
     };
   
     return Person; 
